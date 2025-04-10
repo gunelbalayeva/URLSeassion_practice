@@ -13,6 +13,9 @@
 		CE9B80CC2DA69A87002F8DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B80CA2DA69A87002F8DFA /* Main.storyboard */; };
 		CE9B80CE2DA69A8D002F8DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9B80CD2DA69A8D002F8DFA /* Assets.xcassets */; };
 		CE9B80D12DA69A8D002F8DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B80CF2DA69A8D002F8DFA /* LaunchScreen.storyboard */; };
+		CE9B80DA2DA69AEB002F8DFA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B80D92DA69AEB002F8DFA /* Network.swift */; };
+		CE9B80DD2DA6A49F002F8DFA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B80DC2DA6A49F002F8DFA /* UserModel.swift */; };
+		CE9B80E02DA6C4B3002F8DFA /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B80DF2DA6C4B3002F8DFA /* PostModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CE9B80CD2DA69A8D002F8DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9B80D02DA69A8D002F8DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9B80D22DA69A8D002F8DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9B80D92DA69AEB002F8DFA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CE9B80DC2DA6A49F002F8DFA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CE9B80DF2DA6C4B3002F8DFA /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		CE9B80C32DA69A87002F8DFA /* PracticeURLSeassion */ = {
 			isa = PBXGroup;
 			children = (
+				CE9B80DE2DA6A53D002F8DFA /* Entities */,
+				CE9B80D82DA69ACE002F8DFA /* NetworkService */,
 				CE9B80C42DA69A87002F8DFA /* AppDelegate.swift */,
 				CE9B80C62DA69A87002F8DFA /* SceneDelegate.swift */,
 				CE9B80C82DA69A87002F8DFA /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				CE9B80D22DA69A8D002F8DFA /* Info.plist */,
 			);
 			path = PracticeURLSeassion;
+			sourceTree = "<group>";
+		};
+		CE9B80D82DA69ACE002F8DFA /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B80D92DA69AEB002F8DFA /* Network.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CE9B80DE2DA6A53D002F8DFA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B80DC2DA6A49F002F8DFA /* UserModel.swift */,
+				CE9B80DF2DA6C4B3002F8DFA /* PostModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9B80C92DA69A87002F8DFA /* ViewController.swift in Sources */,
+				CE9B80E02DA6C4B3002F8DFA /* PostModel.swift in Sources */,
 				CE9B80C52DA69A87002F8DFA /* AppDelegate.swift in Sources */,
+				CE9B80DA2DA69AEB002F8DFA /* Network.swift in Sources */,
+				CE9B80DD2DA6A49F002F8DFA /* UserModel.swift in Sources */,
 				CE9B80C72DA69A87002F8DFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
